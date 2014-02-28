@@ -1,0 +1,9 @@
+.DS_Store
+*.o
+*.a
+*.swp
+build_config.mk
+output
+test/test
+test/tmp
+
