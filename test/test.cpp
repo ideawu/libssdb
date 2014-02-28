@@ -57,6 +57,10 @@ int main(int argc, char **argv){
 		double stime = millitime();
 		ssdb::KIterator *it;
 		it = db->scan("", "", -1);
+		if(it == NULL){
+			fprintf(stderr, "Scan error!\n");
+			exit(0);
+		}
 		int num = 0;
 		while(it->next()){
 			num ++;
