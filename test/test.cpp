@@ -73,6 +73,7 @@ int main(int argc, char **argv){
 		printf("scan : %10d op/s, %.3f us/op, %.2f MB/s, keys: %d\n", iops, us_per_op, mbs, num);
 	}
 	
+	delete db;
 	return 0;
 }
 

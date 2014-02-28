@@ -33,6 +33,7 @@ DbImpl::~DbImpl(){
 }
 
 Db* Db::open(const Options &options){
+	set_log_level(Logger::LEVEL_MIN);
 	std::string main_db_path = options.path;
 	int cache_size = options.cache_size;
 	int write_buffer_size = 4;
