@@ -202,7 +202,7 @@ static int hdel_one(DbImpl *ssdb, const Bytes &name, const Bytes &key){
 	}
 	std::string dbval;
 	if(ssdb->hget(name, key, &dbval) == 0){
-		return -1;
+		return 0;
 	}
 
 	std::string hkey = encode_hash_key(name, key);
