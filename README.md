@@ -1,4 +1,3 @@
-libssdb
-=======
+#  This project is no longer maintained, libssdb is provided in the SSDB project
 
-SSDB engine
+https://github.com/ideawu/ssdb
